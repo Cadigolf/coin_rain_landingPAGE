@@ -5,13 +5,13 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { Connection, PublicKey } from '@solana/web3.js';
 import { useAuth } from './AuthContext';
 import { OnboardingFlow } from './onboarding/OnboardingFlow';
-
+// import { notification } from 'hardhat-deploy-notification'
 const Hero: React.FC = () => {
   const [onboardingOpen, setOnboardingOpen] = useState(false);
   const [isHovering, setIsHovering] = useState(false);
   const { connected, publicKey, wallet } = useWallet();
   const { user, claimWalletAddress, hasCompletedWalletSetup } = useAuth();
-
+  // notification
   const handleJoinAirdrop = useCallback(() => {
     if (user && hasCompletedWalletSetup) {
       // User is fully set up, redirect to community site
