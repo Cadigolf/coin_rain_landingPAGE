@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import { AuthProvider } from './components/AuthContext';
 import { SolanaWalletProvider } from './components/WalletProvider';
 import Header from './components/Header';
