@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState } from 'react';
+import React, { createContext, useContext, useState, type ReactNode } from 'react';
 
 interface CoinRainContextType {
   isCoinRainActive: boolean;
