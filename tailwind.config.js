@@ -31,7 +31,8 @@ export default {
           800: '#1e293b',
           900: '#0f172a',
           950: '#020617',
-        }
+        },
+        'custom-cyan': '#00f9e3',
       },
       fontFamily: {
         'sans': ['Inter', 'system-ui', 'sans-serif'],

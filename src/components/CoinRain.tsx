@@ -211,18 +211,16 @@ const CoinRain: React.FC = React.memo(() => {
     });
   }, [coins, windowDimensions, isEnhanced]);
 
- 
-
   return (
     <>
-      <div className="fixed inset-0 pointer-events-none z-10 overflow-hidden">
+      <div className="absolute inset-0 pointer-events-none z-10 overflow-hidden">
         <AnimatePresence mode="popLayout">
           {renderedCoins}
         </AnimatePresence>
       </div>
       {isEnhanced && (
         <motion.div
-          className="fixed inset-0 pointer-events-none z-5"
+          className="absolute inset-0 pointer-events-none z-5"
           initial={{ opacity: 0 }}
           animate={{ 
             opacity: [0, 0.1, 0],

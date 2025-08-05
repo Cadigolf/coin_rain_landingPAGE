@@ -1,38 +1,54 @@
+import React from 'react';
+import { AuthProvider } from './components/AuthContext';
+import { SolanaWalletProvider } from './components/WalletProvider';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import TokenizedLogistics from './components/TokenizedLogistics';
 import Features from './components/Features';
-import Newsletter from './components/Newsletter';
+import BrandCommunities from './components/BrandCommunities';
+import CheckoutFlow from './components/CheckoutFlow';
+import FuturePlatform from './components/FuturePlatform';
+import LetsWork from './components/LetsWork';
 import Footer from './components/Footer';
-import CoinRain from './components/CoinRain';
-import { AuthProvider } from './components/AuthContext';
-import { SolanaWalletProvider } from './components/WalletProvider';
+
 function App() {
-return (
-<AuthProvider>
-<SolanaWalletProvider>
-<div className="min-h-screen bg-slate-900 text-white overflow-x-hidden">
-{/* Animated coin rain background */}
-<CoinRain />
-      {/* Header with navigation and onboarding integration */}
-      <Header />
-      
-      {/* Main content */}
-      <main>
-        {/* Hero section with onboarding trigger */}
-        <Hero />
-        
-        {/* Existing sections */}
-        <TokenizedLogistics />
-        <Features />
-        <Newsletter />
-      </main>
-      
-      {/* Footer */}
-      <Footer />
-    </div>
-  </SolanaWalletProvider>
-</AuthProvider>
-);
+  return (
+    <AuthProvider>
+      <SolanaWalletProvider>
+        <div className="min-h-screen bg-black text-white overflow-x-hidden">
+          {/* Header */}
+          <Header />
+          
+          {/* Main content */}
+          <main>
+            {/* Hero section */}
+            <Hero />
+            
+            {/* Tokenized Logistics section */}
+            <TokenizedLogistics />
+            
+            {/* Features section */}
+            <Features />
+            
+            {/* Brand Communities section */}
+            <BrandCommunities />
+            
+            {/* Checkout Flow section */}
+            <CheckoutFlow />
+            
+            {/* Future Platform section */}
+            <FuturePlatform />
+            
+            {/* Let's Work section */}
+            <LetsWork />
+          </main>
+          
+          {/* Footer */}
+          <Footer />
+        </div>
+      </SolanaWalletProvider>
+    </AuthProvider>
+  );
 }
+
 export default App;

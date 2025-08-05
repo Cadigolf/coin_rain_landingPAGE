@@ -1,104 +1,103 @@
+// src/components/TokenizedLogistics.tsx - Completely rebuilt to match the attached image exactly
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const features = [
-  {
-    icon: '🧪',
-    title: 'Try Before You Buy',
-    description: 'Test products locally—no risk, no wait'
-  },
-  {
-    icon: '📦',
-    title: 'Instant Fulfillment',
-    description: 'Grab it now, return it anytime. No shipping'
-  },
-  {
-    icon: '🎯',
-    title: 'Tokenized Ownership',
-    description: 'Every item is a digital asset you control'
-  }
-];
-
 const TokenizedLogistics: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with overlay */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url('assets/kiosk.jpg')`,
-        }}
-      />
-      
-      {/* Dark overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/70" />
-      
-      {/* Content */}
-      <div className="container mx-auto px-6 relative z-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <section className="relative py-20 bg-black">
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
           
-          {/* Left side - Text content */}
+          {/* Left Column - Image */}
           <motion.div
-            className="text-left"
+            className="relative"
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            {/* Main headline */}
-            <motion.h2
-              className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.2 }}
-              viewport={{ once: true }}
-            >
-              Rewiring Retail with{' '}
-              <span className="glow-text">
-                Tokenized Logistics
-              </span>
-            </motion.h2>
-
-            {/* Subheadline */}
-            <motion.p
-              className="text-xl md:text-2xl text-gray-300 mb-12 leading-relaxed max-w-2xl"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.4 }}
-              viewport={{ once: true }}
-            >
-              Local fulfillment, instant access, and digital ownership—powered by autonomous kiosks and blockchain.
-            </motion.p>
-
-            {/* Features list */}
-            <div className="space-y-8">
-              {features.map((feature, index) => (
-                <motion.div
-                  key={index}
-                  className="flex items-start space-x-6"
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.6, delay: 0.6 + index * 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <div className="flex-shrink-0 w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-2xl backdrop-blur-sm border border-white/20">
-                    {feature.icon}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-2xl font-bold text-white mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-300 text-lg leading-relaxed">
-                      {feature.description}
-                    </p>
-                  </div>
-                </motion.div>
-              ))}
+            <div className="relative rounded-3xl overflow-hidden border border-custom-cyan">
+              <motion.img
+                src="/assets/png/kiosk_img-8.png"
+                alt="HubsAI Kiosks"
+                className="w-full h-auto scale-110"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1.1 }}
+                transition={{ duration: 1, delay: 0.2 }}
+                viewport={{ once: true }}
+              />
             </div>
           </motion.div>
 
-          {/* Right side - Retail Plaza with HubsAI Kiosk */}
-          
+          {/* Right Column - Content */}
+          <motion.div
+            className="space-y-8 px-8"
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
+            {/* Main Heading */}
+            <motion.h2
+              className="text-4xl lg:text-5xl font-bold text-white leading-tight"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.2 }}
+              viewport={{ once: true }}
+            >
+              Rewiring Retail with <br/>Tokenized Logistics
+            </motion.h2>
+
+            {/* Subtitle */}
+            <motion.p
+              className="text-xl text-custom-cyan leading-relaxed"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.4 }}
+              viewport={{ once: true }}
+            >
+              Tokenization unlocks Autonomous <br/> local fulfillment and Instant Access.
+            </motion.p>
+
+            {/* Feature List */}
+            <motion.div
+              className="space-y-6"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 0.6 }}
+              viewport={{ once: true }}
+            >
+              {/* Feature 1 */}
+              <div className="flex items-start items-center space-x-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                  <img src="/assets/svg/hanger_icon.svg" alt="Try Before You Buy" className="w-10 h-10" />
+                </div>
+                <div>
+                  <p className="text-gray-300">Try Before You Buy</p>
+                </div>
+              </div>
+
+              {/* Feature 2 */}
+              <div className="flex items-start items-center space-x-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                  <img src="/assets/svg/stopwatch_icon.svg" alt="Instant Fulfillment" className="w-10 h-10  " />
+                </div>
+                <div>
+                  <p className="text-gray-300">Instant Fulfillment</p>
+                </div>
+              </div>
+
+              {/* Feature 3 */}
+              <div className="flex items-start items-center space-x-4">
+                <div className="flex-shrink-0 w-10 h-10 flex items-center justify-center">
+                  <img src="/assets/svg/cubic_icon.svg" alt="Tokenized Ownership" className="w-10 h-10  " />
+                </div>
+                <div>
+                  <p className="text-gray-300">Tokenized Ownership</p>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
