@@ -26,6 +26,7 @@ const Header: React.FC = () => {
               className="outline-solid px-4 py-2  text-white rounded-3xl text-sm font-medium border border-custom-cyan hover:bg-gray-100 transition-colors hover:text-black"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => window.open('https://hubsai.gitbook.io/hubsai-docs/', '_blank')}
             >
               HUBSAI Whitepaper
             </motion.button>
@@ -35,16 +36,16 @@ const Header: React.FC = () => {
               <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/linkedin_icon.svg" alt="LinkedIn" className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
+              <motion.a href="https://x.com/HubsaiOfficial" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/x_icon.svg" alt="X" className="w-5 h-5" />
               </motion.a>
               <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/instagram_icon.svg" alt="Instagram" className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
+              <motion.a href="https://discord.gg/xjNjWRuR" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/discord_icon.svg" alt="Discord" className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
+              <motion.a href="https://t.me/hubsai" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/telegram_icon.svg" alt="Telegram" className="w-5 h-5" />
               </motion.a>
             </div>

@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           
           {/* Logo and Tagline */}
           <motion.div 
-            className="col-span-1 md:col-span-1"
+            className="col-span-1 md:col-span-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
@@ -20,8 +20,8 @@ const Footer: React.FC = () => {
               <img src="/assets/svg/HubsAI_Logo.svg" alt="HubsAI" className="h-8 w-auto" />
             </div>
             <p className="text-gray-400 mb-6 max-w-md">
-              Revolutionizing retail through the power of AI  and real-world asset tokenization. 
-              Join us in  building the future of commerce.
+              Revolutionizing retail through the power of AI and real-world asset tokenization. 
+              Join us in building the future of commerce.
             </p>
             
             {/* Social Media Icons */}
@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
                 <img src="/assets/svg/linkedin_icon.svg" alt="LinkedIn" className="w-6 h-6" />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://t.me/hubsai" 
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
@@ -78,17 +78,17 @@ const Footer: React.FC = () => {
           >
             <h3 className="text-custom-cyan font-semibold mb-4">Quick Link</h3>
             <div className="flex flex-wrap gap-x-8 gap-y-2">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Docs</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Tokenomics</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">$1M Airdrop</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Roadmap</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Docs</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/tokenomics" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Tokenomics</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/socialfi-airdrop-early-access" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">$1M Airdrop</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs/product-roadmap/product-stack-layering" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Roadmap</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a>
             </div>
           </motion.div>
           
           {/* Company */}
           <motion.div
-          className="col-span-1 md:col-span-2"
+            className="col-span-1 md:col-span-2"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
@@ -96,10 +96,10 @@ const Footer: React.FC = () => {
           >
             <h3 className="text-custom-cyan font-semibold mb-4">Company</h3>
             <div className="flex flex-wrap gap-x-8 gap-y-2">
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">About</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/quickstart" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">About</a>
               <a href="#" className="text-gray-400 hover:text-white transition-colors">Careers</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Blog</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a>
+              <a href="https://medium.com/@HubsAIOfficial" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Blog</a>
+              <a href="mailto:tyler@hubsai.io" className="text-gray-400 hover:text-white transition-colors">Contact</a>
             </div>
           </motion.div>
 
