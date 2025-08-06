@@ -5,6 +5,10 @@ import CoinRain from './CoinRain';
 const FuturePlatform: React.FC = () => {
   const [isSectionVisible, setIsSectionVisible] = useState(false);
 
+  const handleJoinAirdrop = () => {
+    window.open('https://community.hubsai.io', '_blank');
+  };
+
   return (
     <section className="relative py-20 bg-black overflow-hidden">
       {/* Background Image */}
@@ -52,6 +56,7 @@ const FuturePlatform: React.FC = () => {
               className="px-10 py-4 bg-custom-cyan text-white rounded-xl font-bold text-lg hover:bg-blue-600 transition-all duration-300 shadow-lg hover:shadow-xl"
               whileHover={{ scale: 1.05, y: -2 }}
               whileTap={{ scale: 0.95 }}
+              onClick={handleJoinAirdrop}
             >
               Join the Airdrop
             </motion.button>

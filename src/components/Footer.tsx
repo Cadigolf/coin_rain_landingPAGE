@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
               <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/tokenomics" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Tokenomics</a>
               <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/socialfi-airdrop-early-access" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">$1M Airdrop</a>
               <a href="https://hubsai.gitbook.io/hubsai-docs/product-roadmap/product-stack-layering" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">Roadmap</a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors">FAQs</a>
+              <a href="https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/faq" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">FAQs</a>
             </div>
           </motion.div>
           
