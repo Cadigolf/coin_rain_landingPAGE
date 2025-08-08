@@ -33,15 +33,15 @@ const Header: React.FC = () => {
 
             {/* Social Icons */}
             <div className="flex items-center space-x-4">
-              <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
+              {/* <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/linkedin_icon.svg" alt="LinkedIn" className="w-5 h-5" />
-              </motion.a>
+              </motion.a> */}
               <motion.a href="https://x.com/HubsaiOfficial" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/x_icon.svg" alt="X" className="w-5 h-5" />
               </motion.a>
-              <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
+              {/* <motion.a href="#" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/instagram_icon.svg" alt="Instagram" className="w-5 h-5" />
-              </motion.a>
+              </motion.a> */}
               <motion.a href="https://discord.gg/xjNjWRuR" className="text-white/70 hover:text-white transition-colors" whileHover={{ scale: 1.1 }}>
                 <img src="/assets/svg/discord_icon.svg" alt="Discord" className="w-5 h-5" />
               </motion.a>

@@ -26,14 +26,14 @@ const Footer: React.FC = () => {
             
             {/* Social Media Icons */}
             <div className="flex items-center space-x-4">
-              <motion.a 
+              {/* <motion.a 
                 href="#" 
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <img src="/assets/svg/instagram_icon.svg" alt="Instagram" className="w-6 h-6" />
-              </motion.a>
+              </motion.a> */}
               <motion.a 
                 href="https://x.com/HubsaiOfficial" 
                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -50,14 +50,14 @@ const Footer: React.FC = () => {
               >
                 <img src="/assets/svg/facebook_icon.svg" alt="Facebook" className="w-6 h-6" />
               </motion.a>
-              <motion.a 
+              {/* <motion.a 
                 href="#" 
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <img src="/assets/svg/linkedin_icon.svg" alt="LinkedIn" className="w-6 h-6" />
-              </motion.a>
+              </motion.a> */}
               <motion.a 
                 href="https://t.me/hubsai" 
                 className="text-gray-400 hover:text-blue-400 transition-colors"
