@@ -43,12 +43,12 @@ const Footer: React.FC = () => {
                 <img src="/assets/svg/x_icon.svg" alt="X" className="w-6 h-6" />
               </motion.a>
               <motion.a 
-                href="#" 
+                href="https://discord.gg/xjNjWRuR"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img src="/assets/svg/facebook_icon.svg" alt="Facebook" className="w-6 h-6" />
+              <img src="/assets/svg/discord_icon.svg" alt="Discord" className="w-6 h-6" />
               </motion.a>
               {/* <motion.a 
                 href="#" 

@@ -34,7 +34,7 @@ const Features: React.FC = () => {
               transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: true }}
         >
-              Turn purchases into programmable  <br/> assets—stake products, earn rewards, <br/>and access exclusive brand perks.
+              Turn purchases into programmable  <br/> assets-stake products, earn rewards, <br/>and access exclusive brand perks.
             </motion.p>
 
             {/* Feature List */}

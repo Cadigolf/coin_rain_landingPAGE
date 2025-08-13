@@ -76,7 +76,7 @@ const Hero: React.FC = () => {
                 transition={{ duration: 1, delay: 0.7 }}
               >
                 <motion.button
-                  className="flex items-center space-x-5 px-6 py-3 border border-custom-cyan text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300"
+                  className="flex items-center space-x-5 px-6 py-3 border border-custom-cyan text-white rounded-lg font-medium hover:bg-gray-600 hover:text-white transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
@@ -94,7 +94,7 @@ const Hero: React.FC = () => {
               >
                 {/* Create Account Button */}
                 <motion.button
-                  className="px-2 py-1 border border-custom-cyan text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300"
+                  className="px-2 py-1 border border-custom-cyan text-white rounded-lg font-medium hover:bg-gray-600 hover:text-white transition-all duration-300"
                   onClick={handleCreateAccount}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
 
                 {/* Read Documents Button */}
                 <motion.button
-                  className="px-2 py-1 border border-custom-cyan text-white rounded-lg font-medium hover:bg-white hover:text-black transition-all duration-300"
+                  className="px-2 py-1 border border-custom-cyan text-white rounded-lg font-medium hover:bg-gray-600 hover:text-white transition-all duration-300"
                   onClick={handleReadDocuments}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}

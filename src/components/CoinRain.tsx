@@ -135,18 +135,18 @@ const CoinRain: React.FC = React.memo(() => {
     };
   }, [currentConfig, generateCoin, generateCoinBurst]);
 
-  useEffect(() => {
-    if (isEnhanced) {
-      console.log('🎉 Creating enhancement burst!');
-      const enhancementBurst = () => {
-        for (let i = 0; i < (isMobile ? 8 : 15); i++) {
-          setTimeout(() => generateCoin(), i * 100);
-        }
-      };
+  // useEffect(() => {
+  //   if (isEnhanced) {
+  //     console.log('🎉 Creating enhancement burst!');
+  //     const enhancementBurst = () => {
+  //       for (let i = 0; i < (isMobile ? 8 : 15); i++) {
+  //         setTimeout(() => generateCoin(), i * 100);
+  //       }
+  //     };
       
-      setTimeout(enhancementBurst, 500);
-    }
-  }, [isEnhanced, generateCoin]);
+  //     setTimeout(enhancementBurst, 500);
+  //   }
+  // }, [isEnhanced, generateCoin]);
 
   const renderedCoins = useMemo(() => {
     return coins.map((coin) => {

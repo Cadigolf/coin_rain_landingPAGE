@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           {/* Whitepaper Button - centered */}
           <div className="flex justify-center">
             <motion.button
-              className="outline-solid px-4 py-2  text-white rounded-3xl text-sm font-medium border border-custom-cyan hover:bg-gray-100 transition-colors hover:text-black"
+              className="outline-solid px-4 py-2  text-white rounded-3xl text-sm font-medium border border-custom-cyan hover:bg-gray-600 transition-colors hover:text-white"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => window.open('https://hubsai.gitbook.io/hubsai-docs/', '_blank')}
