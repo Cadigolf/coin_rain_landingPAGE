@@ -5,15 +5,15 @@ import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { CSSProperties, useEffect, useState } from "react";
 
 const phrases = [
-  "Future Of Retail",
-  "Innovating Logistics",
+  "The Future Of Retail",
+  "Innovative Logistics",
   "Programmable Rewards",
 ];
 
 const LINE_BREAK = "\n";
 const phrasesWithBreaks = [
-  "Future Of Retail",
-  `Innovating${LINE_BREAK}Logistics`,
+  "The Future Of Retail",
+  `Innovative${LINE_BREAK}Logistics`,
   `Programmable${LINE_BREAK}Rewards`,
 ];
 

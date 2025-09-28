@@ -37,14 +37,14 @@ export default function KioskSection() {
         {/* Left side buttons */}
         <Animate type="fadeIn">
           <KioskButton
-            title="Rewards Dashboard"
+            title="Instant Local Fulfillment"
             className="animate-float absolute bottom-[280px] left-[20px] z-10 rotate-[-5deg] md:top-auto md:bottom-[315px] md:left-[100px] md:rotate-[-10deg] lg:rotate-[-4deg]"
           />
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
-            title="Rewards Dashboard"
+            title="Try Before You Buy"
             className="animate-float absolute bottom-[95px] left-[20px] z-10 rotate-[7deg] md:top-auto md:bottom-[170px] md:left-[120px] md:rotate-[9deg]"
           />
         </Animate>
@@ -52,7 +52,7 @@ export default function KioskSection() {
         {/* Center button */}
         <Animate type="fadeIn">
           <KioskButton
-            title="Token Staking"
+            title="AI Interactive Assistant"
             className="animate-float-delay-2 absolute bottom-[155px] left-1/2 z-10 -translate-x-1/2 md:top-auto md:bottom-[64px] md:rotate-0"
           />
         </Animate>
@@ -60,14 +60,14 @@ export default function KioskSection() {
         {/* Right side buttons */}
         <Animate type="fadeIn">
           <KioskButton
-            title="Brand Promotions"
+            title="AI Fulfillment Agent"
             className="animate-float-delay-4 absolute right-[20px] bottom-[25px] z-10 rotate-[-7deg] md:top-auto md:right-[150px] md:bottom-[170px] md:rotate-[-9deg]"
           />
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
-            title="Brand Promotions"
+            title="$HUBS Tokenization and Rewards"
             className="animate-float-delay-4 absolute right-[20px] bottom-[212px] z-10 rotate-[5deg] md:top-auto md:right-[130px] md:bottom-[320px] md:rotate-[4deg]"
           />
         </Animate>

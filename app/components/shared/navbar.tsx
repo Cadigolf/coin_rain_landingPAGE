@@ -10,11 +10,11 @@ const navigationLinks = [
   { label: "Rewards", href: "#rewards" },
   { label: "How it Works", href: "#how-it-works" },
   { label: "Airdrop", href: "#airdrop" },
-  { label: "Docs", href: "#docs" },
+  { label: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/" },
 ];
 
 export default function Navbar() {
-  const sections = ["#video", "#rewards", "#how-it-works", "#airdrop", "#docs"];
+  const sections = ["#video", "#rewards", "#how-it-works", "#airdrop"];
   const activeSection = useActiveSection(sections);
 
   return (
@@ -35,6 +35,8 @@ export default function Navbar() {
                       !isActive,
                   },
                 )}
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
                 {link.label}
               </Link>

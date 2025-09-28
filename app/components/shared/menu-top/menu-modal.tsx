@@ -13,7 +13,7 @@ const navigationLinks = [
   { label: "$HUBS Token", href: "#hubs-token" },
   { label: "Airdrop", href: "#airdrop" },
   { label: "Roadmap", href: "#roadmap" },
-  { label: "Docs", href: "#docs" },
+  { label: "Whitepaper", href: "https://hubsai.gitbook.io/hubsai-docs/" },
 ];
 
 const socialLinks = [
@@ -79,6 +79,8 @@ export default function MenuModal({
                 href={link.href}
                 className="cursor-pointer"
                 onClick={onClose}
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
               >
                 <p className="text-paragraph active:text-cyan text-base font-medium transition-all duration-300 hover:text-white">
                   {link.label}
