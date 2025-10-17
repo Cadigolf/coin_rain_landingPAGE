@@ -170,7 +170,7 @@ export default function VideoSection() {
                     onMouseMove={showControlsTemporarily}
                   >
                     <source
-                      src="https://res.cloudinary.com/dqlifcg8r/video/upload/v1758717302/video_1_isxogd.mp4"
+                      src="https://res.cloudinary.com/ddlmexgah/video/upload/v1760706184/Hubs_Without_Launch_Date_v2_xyvuun.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.

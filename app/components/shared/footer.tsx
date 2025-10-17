@@ -7,9 +7,9 @@ const footerLinks = {
   quickLinks: [
     { name: "How it works", href: "#how-it-works" },
     { name: "$HUBS Token", href: "/" },
-    { name: "Aidrop", href: "#airdrop" },
+    { name: "Airdrop", href: "https://community.hubsai.io/" },
     { name: "Roadmap", href: "#roadmap" },
-    { name: "Docs", href: "/" },
+    { name: "Docs", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/legal-utility-letter" },
   ],
   company: [
     { name: "About", href: "/" },
@@ -18,11 +18,11 @@ const footerLinks = {
     { name: "Content", href: "/" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "/" },
-    { name: "Terms of Service", href: "/" },
-    { name: "Cookie Policy", href: "/" },
-    { name: "Compliance", href: "/" },
-    { name: "Docs", href: "/" },
+    { name: "Privacy Policy", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/privacy-policy" },
+    { name: "Terms of Service", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/terms-of-service" },
+    { name: "Cookie Policy", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/cookie-policy" },
+    { name: "Compliance", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/complicance" },
+    { name: "Docs", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/legal-utility-letter" },
   ],
 };
 

@@ -21,12 +21,6 @@ const images = [
     height: 60,
   },
   {
-    src: "/images/slideshow/brands/coinbase.svg",
-    alt: "coinbase",
-    width: 195,
-    height: 60,
-  },
-  {
     src: "/images/slideshow/brands/stripe.svg",
     alt: "stripe",
     width: 120,
@@ -43,12 +37,6 @@ const images = [
     alt: "discord",
     width: 230,
     height: 40,
-  },
-  {
-    src: "/images/slideshow/brands/telegram.svg",
-    alt: "telegram",
-    width: 215,
-    height: 60,
   },
   {
     src: "/images/slideshow/brands/x.svg",

@@ -108,7 +108,7 @@ export default function Hero() {
                 height={32}
                 alt="solana-logo"
               />
-              <p className="text-stroke">Buy $HUBS on SOLANA</p>
+              <p className="text-stroke">$Hubs Coming Soon</p>
             </div>
           </Button>
         </Animate>
