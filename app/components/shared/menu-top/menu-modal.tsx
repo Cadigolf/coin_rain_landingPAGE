@@ -19,12 +19,12 @@ const navigationLinks = [
 
 const socialLinks = [
   {
-    href: "https://x.com/hubs_ai",
+    href: "https://x.com/HubsaiOfficial",
     icon: "/icons/x.svg",
     alt: "x",
   },
   {
-    href: "https://t.me/hubs_ai",
+    href: "https://t.me/hubsai",
     icon: "/icons/telegram.svg",
     alt: "telegram",
   },

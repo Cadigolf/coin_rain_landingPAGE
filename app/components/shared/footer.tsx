@@ -27,9 +27,13 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { href: "https://x.com/username", icon: "/icons/x.svg", alt: "x" },
   {
-    href: "https://t.me/username",
+    href: "https://x.com/HubsaiOfficial",
+    icon: "/icons/x.svg",
+    alt: "x",
+  },
+  {
+    href: "https://t.me/hubsai",
     icon: "/icons/telegram.svg",
     alt: "telegram",
   },
