@@ -1,6 +1,7 @@
 import { cn } from "@/lib/cn";
 import Image from "next/image";
 import Link from "next/link";
+import Tooltip from "@/app/components/shared/tooltip";
 
 type MenuModalProps = {
   isOpen: boolean;
@@ -91,15 +92,19 @@ export default function MenuModal({
 
           {/* Action Buttons */}
           <div className="flex items-center gap-x-4 px-6">
-            <button className="border-stroke bg-radial-linear-top-large text-paragraph h-full flex-1 rounded-lg border bg-gradient-to-b from-[#080808] to-[#161616] py-2 text-base transition-all duration-300 hover:scale-105 active:scale-95">
-              Log In
-            </button>
+            <Tooltip>
+              <button className="border-stroke bg-radial-linear-top-large text-paragraph h-full flex-1 rounded-lg border bg-gradient-to-b from-[#080808] to-[#161616] px-6 py-2 text-base transition-all duration-300 hover:scale-105 active:scale-95">
+                Log In
+              </button>
+            </Tooltip>
 
-            <button className="border-stroke h-full flex-1 rounded-lg border bg-white/90 py-2 transition-all duration-300 hover:scale-105 active:scale-95">
-              <p className="bg-[linear-gradient(0deg,rgba(0,0,0,0.58)_8.85%,#000_100%)] bg-clip-text text-base font-medium text-transparent">
-                Sign Up
-              </p>
-            </button>
+            <Tooltip>
+              <button className="border-stroke h-full flex-1 rounded-lg border bg-white/90 px-6 py-2 transition-all duration-300 hover:scale-105 active:scale-95">
+                <p className="bg-[linear-gradient(0deg,rgba(0,0,0,0.58)_8.85%,#000_100%)] bg-clip-text text-base font-medium text-transparent">
+                  Sign Up
+                </p>
+              </button>
+            </Tooltip>
           </div>
 
           {/* Decoration and Social Links */}

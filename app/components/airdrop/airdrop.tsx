@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../shared/button";
 import Animate from "../shared/animate";
 import SplineIframe from "../shared/spline-iframe";
@@ -88,9 +89,11 @@ export default function Airdrop() {
                   </Animate>
 
                   <Animate type="fadeUp">
-                    <Button>
-                      <p className="text-gradient">Join The Airdrop</p>
-                    </Button>
+                    <Link href="https://community.hubsai.io/" target="_blank" rel="noopener noreferrer">
+                      <Button>
+                        <p className="text-gradient">Join The Airdrop</p>
+                      </Button>
+                    </Link>
                   </Animate>
                 </div>
               </div>

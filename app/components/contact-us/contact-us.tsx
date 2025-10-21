@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Button from "../shared/button";
 import Animate from "../shared/animate";
+import Tooltip from "../shared/tooltip";
 
 export default function ContactUs() {
   return (
@@ -46,11 +47,13 @@ export default function ContactUs() {
 
       {/* Contact Button */}
       <Animate type="fadeUp">
-        <div className="relative flex w-full justify-center sm:absolute sm:bottom-5 sm:left-1/2 sm:-translate-x-1/2">
-          <Button>
-            <p className="text-gradient">Partner With Us</p>
-          </Button>
-        </div>
+          <div className="relative flex w-full justify-center sm:absolute sm:bottom-5 sm:left-1/2 sm:-translate-x-1/2">
+            <Tooltip>
+              <Button>
+                <p className="text-gradient">Partner With Us</p>
+              </Button>
+            </Tooltip>
+          </div>
       </Animate>
     </div>
   );
