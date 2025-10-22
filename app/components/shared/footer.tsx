@@ -8,8 +8,8 @@ const footerLinks = {
     { name: "How it works", href: "#how-it-works" },
     { name: "$HUBS Token", href: "/" },
     { name: "Airdrop", href: "https://community.hubsai.io/" },
-    { name: "Roadmap", href: "#roadmap" },
-    { name: "Docs", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/legal-utility-letter" },
+    { name: "Roadmap", href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction" },
+    { name: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/" },
   ],
   company: [
     { name: "About", href: "/" },

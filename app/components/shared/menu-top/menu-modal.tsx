@@ -13,7 +13,7 @@ const navigationLinks = [
   { label: "How it works", href: "#how-it-works" },
   { label: "$HUBS Token", href: "#hubs-token" },
   { label: "Airdrop", href: "#airdrop" },
-  { label: "Roadmap", href: "#roadmap" },
+  { label: "Roadmap", href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction" },
   { label: "Whitepaper", href: "https://hubsai.gitbook.io/hubsai-docs/" },
 ];
 
