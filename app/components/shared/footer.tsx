@@ -37,6 +37,11 @@ const socialLinks = [
     icon: "/icons/telegram.svg",
     alt: "telegram",
   },
+  {
+    href: "https://discord.gg/hubsai",
+    icon: "/icons/discord.png",
+    alt: "discord",
+  },
 ];
 
 export default function Footer() {
