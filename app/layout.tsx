@@ -5,7 +5,6 @@ import CursorFollower from "./components/shared/cursor-follower";
 import Footer from "./components/shared/footer";
 import MenuTop from "./components/shared/menu-top/menu-top";
 import "./globals.css";
-import { unifyFlow } from "grid-settings";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,7 +25,7 @@ export default function RootLayout({
   children,
 }: Readonly<{
   children: ReactNode;
-}>) {unifyFlow(132);
+}>) {
   return (
     <html lang="en">
       <body
