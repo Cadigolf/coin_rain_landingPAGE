@@ -18,11 +18,11 @@ const footerLinks = {
     { name: "Content", href: "/" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/privacy-policy" },
-    { name: "Terms of Service", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/terms-of-service" },
-    { name: "Cookie Policy", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/cookie-policy" },
-    { name: "Compliance", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/complicance" },
-    { name: "Docs", href: "https://app.gitbook.com/o/cKgcGlNR6UaASODHKmgu/s/KnQRzAuQ7GoVW9BBYNYq/~/changes/15/hubsai-disclosures/legal-utility-letter" },
+    { name: "Privacy Policy", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/privacy-policy" },
+    { name: "Terms of Service", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/terms-of-service" },
+    { name: "Cookie Policy", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/cookie-policy" },
+    { name: "Compliance", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/complicance" },
+    { name: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/legal-utility-letter" },
   ],
 };
 
