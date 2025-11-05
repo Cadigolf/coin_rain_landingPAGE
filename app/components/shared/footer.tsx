@@ -12,9 +12,9 @@ const footerLinks = {
     { name: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/" },
   ],
   company: [
-    { name: "About", href: "/" },
-    { name: "Careers", href: "/" },
-    { name: "Blog", href: "/" },
+    { name: "About", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/quickstart" },
+    { name: "Careers", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/careers" },
+    { name: "Blog", href: "https://medium.com/@HubsAIOfficial" },
     { name: "Content", href: "/" },
   ],
   legal: [
