@@ -13,7 +13,10 @@ const navigationLinks = [
   { label: "How it works", href: "#how-it-works" },
   { label: "$HUBS Token", href: "#hubs-token" },
   { label: "Airdrop", href: "#airdrop" },
-  { label: "Roadmap", href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction" },
+  {
+    label: "Roadmap",
+    href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction",
+  },
   { label: "Whitepaper", href: "https://hubsai.gitbook.io/hubsai-docs/" },
 ];
 
@@ -21,17 +24,17 @@ const socialLinks = [
   {
     href: "https://x.com/HubsaiOfficial",
     icon: "/icons/x.svg",
-    alt: "x",
+    alt: "X",
   },
   {
     href: "https://t.me/hubsai",
     icon: "/icons/telegram.svg",
-    alt: "telegram",
+    alt: "Telegram",
   },
   {
     href: "https://discord.gg/hubsai",
-    icon: "/icons/discord.png",
-    alt: "discord",
+    icon: "/icons/Discord-Symbol-White.svg",
+    alt: "Discord",
   },
 ];
 
@@ -85,8 +88,12 @@ export default function MenuModal({
                 href={link.href}
                 className="cursor-pointer"
                 onClick={onClose}
-                target={link.href.startsWith('http') ? '_blank' : undefined}
-                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                target={link.href.startsWith("http") ? "_blank" : undefined}
+                rel={
+                  link.href.startsWith("http")
+                    ? "noopener noreferrer"
+                    : undefined
+                }
               >
                 <p className="text-paragraph active:text-cyan text-base font-medium transition-all duration-300 hover:text-white">
                   {link.label}
@@ -129,6 +136,8 @@ export default function MenuModal({
                   href={social.href}
                   className="transition-all duration-300 hover:scale-110 active:scale-95"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  title={social.alt}
                 >
                   <Image
                     src={social.icon}

@@ -8,21 +8,45 @@ const footerLinks = {
     { name: "How it works", href: "#how-it-works" },
     { name: "$HUBS Token", href: "/" },
     { name: "Airdrop", href: "https://community.hubsai.io/" },
-    { name: "Roadmap", href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction" },
+    {
+      name: "Roadmap",
+      href: "https://hubsai.gitbook.io/hubsai-docs/go-to-market-strategy/go-to-market-summary-from-vision-to-real-world-traction",
+    },
     { name: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/" },
   ],
   company: [
-    { name: "About", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/quickstart" },
-    { name: "Careers", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/careers" },
+    {
+      name: "About",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-whitepaper/quickstart",
+    },
+    {
+      name: "Careers",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/careers",
+    },
     { name: "Blog", href: "https://medium.com/@HubsAIOfficial" },
     { name: "Content", href: "/" },
   ],
   legal: [
-    { name: "Privacy Policy", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/privacy-policy" },
-    { name: "Terms of Service", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/terms-of-service" },
-    { name: "Cookie Policy", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/cookie-policy" },
-    { name: "Compliance", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/complicance" },
-    { name: "Docs", href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/legal-utility-letter" },
+    {
+      name: "Privacy Policy",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/privacy-policy",
+    },
+    {
+      name: "Terms of Service",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/terms-of-service",
+    },
+    {
+      name: "Cookie Policy",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/cookie-policy",
+    },
+    {
+      name: "Compliance",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/complicance",
+    },
+    {
+      name: "Docs",
+      href: "https://hubsai.gitbook.io/hubsai-docs/hubsai-disclosures/legal-utility-letter",
+    },
   ],
 };
 
@@ -30,17 +54,17 @@ const socialLinks = [
   {
     href: "https://x.com/HubsaiOfficial",
     icon: "/icons/x.svg",
-    alt: "x",
+    alt: "X",
   },
   {
     href: "https://t.me/hubsai",
     icon: "/icons/telegram.svg",
-    alt: "telegram",
+    alt: "Telegram",
   },
   {
     href: "https://discord.gg/hubsai",
-    icon: "/icons/discord.png",
-    alt: "discord",
+    icon: "/icons/Discord-Symbol-White.svg",
+    alt: "Discord",
   },
 ];
 
@@ -170,7 +194,9 @@ export default function Footer() {
                       key={index}
                       href={social.href}
                       target="_blank"
+                      rel="noopener noreferrer"
                       className="transition-all duration-300 hover:scale-110"
+                      title={social.alt}
                     >
                       <Image
                         src={social.icon}
