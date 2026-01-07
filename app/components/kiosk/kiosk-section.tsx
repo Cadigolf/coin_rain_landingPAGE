@@ -10,14 +10,14 @@ export default function KioskSection() {
       <div className="text-center">
         <Animate type="fadeUp">
           <h1 className="text-gradient text-[40px] leading-[1.2] font-semibold lg:text-[60px]">
-            AI-Powered <br />
-            Autonomous Fulfillment
+            Game-Changing <br />
+            Customer Experiences
           </h1>
         </Animate>
         <Animate type="fadeUp">
           <p className="text-paragraph mx-auto mt-6 max-w-[980px] text-[18px] leading-[1.6] lg:text-[25px]">
-            Discover rewards, preview products, or check out in seconds — all
-            without human assistance.
+            Building a direct bridge between physical products and community
+            management.
           </p>
         </Animate>
       </div>

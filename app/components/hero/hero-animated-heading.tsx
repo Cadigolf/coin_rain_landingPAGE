@@ -1,20 +1,21 @@
 "use client";
 
 import { cn } from "@/lib/cn";
-import { AnimatePresence, motion, type Variants } from "framer-motion";
 import { CSSProperties, useEffect, useState } from "react";
 
+const LINE_BREAK = "\n";
 const phrases = [
-  "The Future Of Retail",
-  "Innovative Logistics",
-  "Programmable Rewards",
+  "Post-sale Activations",
+  `Programmable Rewards${LINE_BREAK}in Every Product`,
+  "A New Digital Economy",
+  `Performance-Driven${LINE_BREAK}Commerce Metrics`,
 ];
 
-const LINE_BREAK = "\n";
 const phrasesWithBreaks = [
-  "The Future Of Retail",
-  `Innovative${LINE_BREAK}Logistics`,
-  `Programmable${LINE_BREAK}Rewards`,
+  `Post-sale${LINE_BREAK}Activations`,
+  `Programmable Rewards${LINE_BREAK}in Every Product`,
+  `A New${LINE_BREAK}Digital Economy`,
+  `Performance-Driven${LINE_BREAK}Commerce Metrics`,
 ];
 
 type HeroAnimatedHeadingProps = {
@@ -24,85 +25,70 @@ type HeroAnimatedHeadingProps = {
 export default function HeroAnimatedHeading({
   isMobile = false,
 }: HeroAnimatedHeadingProps) {
-  const [currentPhrase, setCurrentPhrase] = useState(0);
-
   const currentPhrases = isMobile ? phrasesWithBreaks : phrases;
 
+  const [currentPhraseIndex, setCurrentPhraseIndex] = useState(0);
+  const [displayedText, setDisplayedText] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentPhrase((prev) => (prev + 1) % phrases.length);
-    }, 4000);
+    const currentPhrase = currentPhrases[currentPhraseIndex];
 
-    return () => clearInterval(interval);
-  }, []);
+    const timeout = setTimeout(
+      () => {
+        if (!isDeleting) {
+          // Typing
+          if (displayedText.length < currentPhrase.length) {
+            setDisplayedText(currentPhrase.slice(0, displayedText.length + 1));
+          } else {
+            // Pause when phrase is complete
+            setTimeout(() => setIsDeleting(true), 2000);
+          }
+        } else {
+          // Deleting
+          if (displayedText.length > 0) {
+            setDisplayedText(currentPhrase.slice(0, displayedText.length - 1));
+          } else {
+            // Move to next phrase
+            setIsDeleting(false);
+            setCurrentPhraseIndex((prev) => (prev + 1) % currentPhrases.length);
+          }
+        }
+      },
+      isDeleting ? 50 : 100,
+    );
 
-  const containerVariants: Variants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.2,
-      },
-    },
-    exit: {
-      opacity: 0,
-      transition: {
-        duration: 0.5,
-        delay: 4,
-      },
-    },
-  };
-
-  const letterVariants: Variants = {
-    hidden: {
-      opacity: 0,
-      filter: "blur(20px)",
-    },
-    visible: {
-      opacity: 1,
-      filter: "blur(0px)",
-      transition: {
-        duration: 1,
-        ease: "linear",
-      },
-    },
-  };
+    return () => clearTimeout(timeout);
+  }, [displayedText, isDeleting, currentPhraseIndex, currentPhrases]);
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.span
-        key={currentPhrase}
-        variants={containerVariants}
-        initial="hidden"
-        animate="visible"
-        exit="exit"
-        style={
-          {
-            color: "#ffffff",
-            WebkitTextFillColor: "#ffffff",
-          } as CSSProperties
-        }
-      >
-        {currentPhrases[currentPhrase].split("").map((char, index) => (
-          <motion.span
-            key={`${currentPhrase}-${index}`}
-            variants={letterVariants}
-            className={cn({
-              "block w-full": char === LINE_BREAK,
-              "inline-block": char !== LINE_BREAK,
-            })}
-            style={
-              {
-                color: "#ffffff",
-                WebkitTextFillColor: "#ffffff",
-              } as CSSProperties
-            }
-          >
-            {char === " " ? "\u00A0" : char === LINE_BREAK ? null : char}
-          </motion.span>
-        ))}
-      </motion.span>
-    </AnimatePresence>
+    <span
+      className="relative"
+      style={
+        {
+          color: "#ffffff",
+          WebkitTextFillColor: "#ffffff",
+        } as CSSProperties
+      }
+    >
+      {displayedText.split("").map((char, index) => (
+        <span
+          key={index}
+          className={cn({
+            "block w-full": char === LINE_BREAK,
+            "inline-block": char !== LINE_BREAK,
+          })}
+          style={
+            {
+              color: "#ffffff",
+              WebkitTextFillColor: "#ffffff",
+            } as CSSProperties
+          }
+        >
+          {char === " " ? "\u00A0" : char === LINE_BREAK ? null : char}
+        </span>
+      ))}
+      <span className="animate-blink inline-block">|</span>
+    </span>
   );
 }

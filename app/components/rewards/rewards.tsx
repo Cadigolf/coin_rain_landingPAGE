@@ -16,8 +16,8 @@ export default function Rewards() {
 
           <Animate type="fadeUp">
             <p className="text-paragraph mx-auto mb-12 text-[18px] leading-[1.6] sm:w-[430px] lg:text-[23px] xl:mx-0 xl:mb-0">
-              Earn $HUBS, stake for rewards, and level up your wallet - every
-              transaction is a step toward more value and fun.
+              Focus on Milestone Rewards and tracking customer "Level Ups" via
+              the dashboard.
             </p>
           </Animate>
         </div>

@@ -79,6 +79,17 @@
     }
   }
 
+  @keyframes blink {
+    0%,
+    50% {
+      opacity: 1;
+    }
+    51%,
+    100% {
+      opacity: 0;
+    }
+  }
+
   /* Background Gradients */
   .bg-radial-linear-top-large {
     background-image:
@@ -150,6 +161,10 @@
     animation: float 3s ease-in-out infinite;
     animation-delay: 2s;
     will-change: transform;
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
   }
 
   /* Text Gradient */

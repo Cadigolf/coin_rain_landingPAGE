@@ -29,9 +29,9 @@ const steps = [
     id: "rewards",
     spline:
       "https://my.spline.design/hubsherokioskcopy-9mqZF5tZwApyO5TuDJhZ0hbe/",
-    title: "Earn $HUBS Rewards",
+    title: "Measure Impact",
     description:
-      "Receive $HUBS with every interaction, adding real value to your products.",
+      "Track real-time ROI with measurable real-life engagement and autonomous activations.",
   },
 ];
 

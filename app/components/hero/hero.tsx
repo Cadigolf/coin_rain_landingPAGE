@@ -45,47 +45,45 @@ export default function Hero() {
 
         <div className="font-geist text-center">
           <div className="space-y-1 leading-[1.2] lg:space-y-2">
-            {/* First line: "Tokenizing" + conditional "The World" for desktop and mobile */}
+            {/* Main heading: "Transform Retail with Tokenization" */}
             <Animate type="fadeUp" delay={0}>
-              <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:flex-row lg:gap-x-6 lg:text-[65px] xl:text-[92px]">
-                <div className="flex items-center gap-x-3 xl:gap-x-6">
-                  <span className="font-bold">Tokenizing</span>
-                  <span className="font-light lg:hidden">The</span>
-                </div>
+              <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:flex-row lg:gap-x-4 lg:text-[50px] xl:gap-x-6 xl:text-[65px]">
+                <span className="font-light">
+                  Transform Retail with{" "}
+                  <span className="font-bold">Tokenization</span>
+                </span>
 
-                {/* Desktop: "The World" + gallery inline */}
-                <div className="hidden items-center justify-center gap-x-4 text-[65px] lg:flex xl:gap-x-8 xl:text-[92px]">
-                  <span className="font-light">The World</span>
-                  <HeroGallery className="aspect-auto w-[120px] object-cover xl:w-[180px]" />
+                {/* Desktop: gallery inline */}
+                <div className="hidden items-center justify-center gap-x-4 lg:flex xl:gap-x-6">
+                  <HeroGallery className="aspect-auto w-[100px] object-cover xl:w-[140px]" />
                 </div>
               </div>
             </Animate>
 
-            {/* Mobile: "World" + gallery on separate line */}
+            {/* Mobile: gallery on separate line */}
             <Animate type="fadeUp" delay={0.15}>
               <div className="text-gradient flex items-center justify-center gap-x-2 text-[40px] lg:hidden">
-                <span className="font-light">World</span>
                 <HeroGallery className="aspect-auto w-[110px] object-cover" />
               </div>
             </Animate>
 
-            {/* Powring for both desktop and mobile */}
+            {/* "Unlocking" for both desktop and mobile */}
             <Animate type="fadeUp" delay={0.3}>
-              <div className="text-gradient text-[40px] font-light lg:text-[65px] xl:text-[95px]">
-                Powering
+              <div className="text-gradient text-[40px] font-light lg:text-[55px] xl:text-[85px]">
+                Unlocking
               </div>
             </Animate>
 
             {/* Desktop: Animated text */}
             <Animate type="fadeUp" delay={0.45}>
-              <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-[65px] xl:text-[95px]">
+              <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-[55px] xl:text-[85px]">
                 <HeroAnimatedHeading isMobile={false} />
               </div>
             </Animate>
 
             {/* Mobile: Animated text */}
             <Animate type="fadeUp" delay={0.45}>
-              <div className="bg-gradient h-24 text-[40px] font-bold lg:hidden">
+              <div className="bg-gradient h-24 text-[30px] font-bold lg:hidden">
                 <HeroAnimatedHeading isMobile={true} />
               </div>
             </Animate>
