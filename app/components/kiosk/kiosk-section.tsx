@@ -2,6 +2,7 @@ import Image from "next/image";
 import KioskButton from "./kiosk-button";
 import Animate from "../shared/animate";
 import SplineIframe from "../shared/spline-iframe";
+import KioskBubble from "./kiosk-bubble";
 
 export default function KioskSection() {
   return (
@@ -37,38 +38,74 @@ export default function KioskSection() {
         {/* Left side buttons */}
         <Animate type="fadeIn">
           <KioskButton
-            title="Instant Local Fulfillment"
-            className="animate-float absolute bottom-[280px] left-[20px] z-10 rotate-[-5deg] md:top-auto md:bottom-[315px] md:left-[100px] md:rotate-[-10deg] lg:rotate-[-4deg]"
+            title="Gamified Rewards & Prizes"
+            className="animate-float absolute bottom-[340px] left-[20px] z-10 rotate-[-5deg] md:hidden"
+          />
+          <KioskBubble
+            title="Gamified Rewards & Prizes"
+            description='Move from static points to interactive "Win" states.'
+            className="animate-float absolute bottom-[340px] left-[20px] z-10 hidden rotate-[-5deg] md:bottom-[380px] md:left-[80px] md:block md:rotate-[-8deg]"
           />
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
-            title="Try Before You Buy"
-            className="animate-float absolute bottom-[95px] left-[20px] z-10 rotate-[7deg] md:top-auto md:bottom-[170px] md:left-[120px] md:rotate-[9deg]"
+            title="Exclusive Access to Activations"
+            className="animate-float-delay-2 absolute bottom-[250px] left-[15px] z-10 rotate-[3deg] md:hidden"
+          />
+          <KioskBubble
+            title="Exclusive Access to Activations"
+            description="Gated digital and physical events unlocked via the token."
+            className="animate-float-delay-2 absolute bottom-[200px] left-[20px] z-10 hidden rotate-[3deg] md:bottom-[180px] md:left-[100px] md:block md:rotate-[5deg]"
           />
         </Animate>
 
-        {/* Center button */}
         <Animate type="fadeIn">
           <KioskButton
-            title="AI Interactive Assistant"
-            className="animate-float-delay-2 absolute bottom-[155px] left-1/2 z-10 -translate-x-1/2 md:top-auto md:bottom-[64px] md:rotate-0"
+            title="Instant Product Authentication"
+            className="animate-float-delay-4 absolute bottom-[130px] left-[70px] z-10 rotate-[4deg] md:hidden"
+          />
+          <KioskBubble
+            title="Instant Product Authentication"
+            description="Instant proof of ownership and digital twin verification."
+            className="animate-float-delay-4 absolute bottom-[60px] left-[20px] z-10 hidden rotate-[-4deg] md:bottom-[10px] md:left-[250px] md:block md:rotate-[-6deg]"
           />
         </Animate>
 
         {/* Right side buttons */}
         <Animate type="fadeIn">
           <KioskButton
-            title="AI Fulfillment Agent"
-            className="animate-float-delay-4 absolute right-[20px] bottom-[25px] z-10 rotate-[-7deg] md:top-auto md:right-[150px] md:bottom-[170px] md:rotate-[-9deg]"
+            title="Close Connection to Brands"
+            className="animate-float absolute right-[20px] bottom-[300px] z-10 rotate-[5deg] md:hidden"
+          />
+          <KioskBubble
+            title="Close Connection to Brands"
+            description='Replacing distant email marketing with a direct, "Programmable" relationship.'
+            className="animate-float absolute right-[20px] bottom-[340px] z-10 hidden rotate-[5deg] md:right-[80px] md:bottom-[380px] md:block md:rotate-[8deg]"
           />
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
-            title="$HUBS Tokenization and Rewards"
-            className="animate-float-delay-4 absolute right-[20px] bottom-[212px] z-10 rotate-[5deg] md:top-auto md:right-[130px] md:bottom-[320px] md:rotate-[4deg]"
+            title="Huge Staking Cashback"
+            className="animate-float-delay-2 absolute right-[60px] bottom-[200px] z-10 rotate-[-3deg] md:hidden"
+          />
+          <KioskBubble
+            title="Huge Staking Cashback"
+            description="High-yield rewards for holding and engaging with brand assets."
+            className="animate-float-delay-2 absolute right-[20px] bottom-[200px] z-10 hidden rotate-[-3deg] md:right-[100px] md:bottom-[190px] md:block md:rotate-[-5deg]"
+          />
+        </Animate>
+
+        <Animate type="fadeIn">
+          <KioskButton
+            title="AI Autonomous Fulfillment"
+            className="animate-float-delay-4 absolute right-[20px] bottom-[60px] z-10 rotate-[-3deg] md:hidden"
+          />
+          <KioskBubble
+            title="AI Autonomous Fulfillment"
+            description='Keep the logic of seamless delivery, but frame it as a "Value Benefit."'
+            className="animate-float-delay-4 absolute right-[20px] bottom-[60px] z-10 hidden rotate-[4deg] md:right-[250px] md:bottom-[15px] md:block md:rotate-[6deg]"
           />
         </Animate>
 

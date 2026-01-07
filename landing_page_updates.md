@@ -14,6 +14,12 @@ For carousel in hero section:
 - [ ] Tokens in Colorful version
 - [ ] Kiosk at airport GIF with walkers.
 
+## Questions
+
+1. Regarding this task: "Footer: Add the Discord SVG to the social cluster. Ensure it inherits the existing cyan/teal hover-glow effect." -- I don't see a hover-glow effect on the production site.
+1. Hero size and alignment need review because they are pretty small in one line.
+1. Is that little hero image being displayed correctly?
+
 ## Changelog
 
 - Update Discord “Clyde” logo to use SVG in navigation and footer.
@@ -21,3 +27,7 @@ For carousel in hero section:
 - Update hero header text
 - Update animated text
 - Update animated text to typewriter effect
+- Update Gamified Engagement section text
+- Update text in Intelligent Customer Activation section
+- Minor tweaks for mobile
+- Update Kiosk floating bubbles with new shape and description support. Also new text.
