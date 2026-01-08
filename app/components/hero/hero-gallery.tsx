@@ -11,15 +11,15 @@ type HeroGalleryProps = {
 
 const galleryImages = [
   {
-    src: "/images/gallery/gallery-placeholder-1.png",
+    src: "/images/gallery/gallery-phone.jpg",
     alt: "gallery-placeholder-1",
   },
   {
-    src: "/images/gallery/gallery-placeholder-2.png",
+    src: "/images/gallery/gallery-tokens.jpg",
     alt: "gallery-placeholder-2",
   },
   {
-    src: "/images/gallery/gallery-placeholder-3.png",
+    src: "/images/gallery/airport.png",
     alt: "gallery-placeholder-3",
   },
 ];
@@ -80,7 +80,9 @@ export default function HeroGallery({
         })}
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[30px] w-[80px] -translate-x-1/2 rounded-full bg-cyan-500/50 blur-[50px]" />
+      {/* Enhanced glow effects */}
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[60px] w-[140px] -translate-x-1/2 rounded-full bg-cyan-500/60 blur-[80px]" />
+      <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 via-transparent to-purple-500/20 blur-xl" />
     </div>
   );
 }

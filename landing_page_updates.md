@@ -31,3 +31,5 @@ For carousel in hero section:
 - Update text in Intelligent Customer Activation section
 - Minor tweaks for mobile
 - Update Kiosk floating bubbles with new shape and description support. Also new text.
+- Update hero image gallery assets
+- Increase size of hero gallery as POC to be reviewed
