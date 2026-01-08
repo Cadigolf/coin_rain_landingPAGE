@@ -80,7 +80,6 @@ export default function HeroGallery({
         })}
       </div>
 
-      {/* Enhanced glow effects */}
       <div className="pointer-events-none absolute bottom-0 left-1/2 h-[60px] w-[140px] -translate-x-1/2 rounded-full bg-cyan-500/60 blur-[80px]" />
       <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 via-transparent to-purple-500/20 blur-xl" />
     </div>
