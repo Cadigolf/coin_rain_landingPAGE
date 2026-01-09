@@ -48,17 +48,23 @@ export default function Hero() {
             <div className="space-y-1 leading-[1.2] lg:space-y-2">
               {/* Main heading: "Transform Retail with Tokenization" */}
               <Animate type="fadeUp" delay={0}>
-                <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:flex-row lg:gap-x-4 lg:text-[50px] xl:gap-x-6 xl:text-[65px]">
+                {/* Desktop: text and gallery side by side */}
+                <div className="hidden lg:flex lg:items-center lg:justify-center lg:gap-x-6 xl:gap-x-8">
+                  <div className="text-gradient text-5xl whitespace-nowrap lg:text-5xl xl:text-7xl">
+                    <span className="font-light">
+                      Transform Retail with{" "}
+                      <span className="font-bold">Tokenization</span>
+                    </span>
+                  </div>
+                  <HeroGallery className="w-[260px] xl:w-[300px]" />
+                </div>
+
+                {/* Mobile: text only */}
+                <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:hidden">
                   <span className="font-light">
                     Transform Retail with{" "}
                     <span className="font-bold">Tokenization</span>
                   </span>
-                </div>
-                <div>
-                  {/* Desktop: gallery inline */}
-                  <div className="my-4 hidden items-center justify-center gap-x-4 lg:flex xl:gap-x-6">
-                    <HeroGallery className="w-[580px]" />
-                  </div>
                 </div>
               </Animate>
 
@@ -71,21 +77,21 @@ export default function Hero() {
 
               {/* "Unlocking" for both desktop and mobile */}
               <Animate type="fadeUp" delay={0.3}>
-                <div className="text-gradient text-[40px] font-light lg:text-[55px] xl:text-[85px]">
+                <div className="text-gradient text-4xl font-light lg:text-6xl xl:text-7xl">
                   Unlocking
                 </div>
               </Animate>
 
               {/* Desktop: Animated text */}
               <Animate type="fadeUp" delay={0.45}>
-                <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-[55px] xl:text-[85px]">
+                <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-7xl xl:text-8xl">
                   <HeroAnimatedHeading isMobile={false} />
                 </div>
               </Animate>
 
               {/* Mobile: Animated text */}
               <Animate type="fadeUp" delay={0.45}>
-                <div className="bg-gradient h-24 text-[30px] font-bold lg:hidden">
+                <div className="bg-gradient h-24 text-4xl font-bold lg:hidden">
                   <HeroAnimatedHeading isMobile={true} />
                 </div>
               </Animate>

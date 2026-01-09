@@ -33,3 +33,5 @@ For carousel in hero section:
 - Update Kiosk floating bubbles with new shape and description support. Also new text.
 - Update hero image gallery assets
 - Increase size of hero gallery as POC to be reviewed
+- Reduce hero gallery size and move back to right side of header text
+- Increase header text size and typewriter font size
