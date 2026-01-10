@@ -50,13 +50,13 @@ export default function Hero() {
               <Animate type="fadeUp" delay={0}>
                 {/* Desktop: text and gallery side by side */}
                 <div className="hidden lg:flex lg:items-center lg:justify-center lg:gap-x-6 xl:gap-x-8">
-                  <div className="text-gradient text-5xl whitespace-nowrap lg:text-5xl xl:text-7xl">
+                  <div className="text-gradient text-6xl whitespace-nowrap lg:text-6xl xl:text-[84px]">
                     <span className="font-light">
                       Transform Retail with{" "}
                       <span className="font-bold">Tokenization</span>
                     </span>
                   </div>
-                  <HeroGallery className="w-[260px] xl:w-[300px]" />
+                  <HeroGallery className="w-[200px] xl:w-[240px]" />
                 </div>
 
                 {/* Mobile: text only */}
@@ -77,7 +77,7 @@ export default function Hero() {
 
               {/* "Unlocking" for both desktop and mobile */}
               <Animate type="fadeUp" delay={0.3}>
-                <div className="text-gradient text-4xl font-light lg:text-6xl xl:text-7xl">
+                <div className="text-gradient mt-4 mb-8 text-6xl font-light lg:text-6xl xl:text-8xl">
                   Unlocking
                 </div>
               </Animate>
