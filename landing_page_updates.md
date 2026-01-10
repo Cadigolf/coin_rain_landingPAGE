@@ -35,3 +35,4 @@ For carousel in hero section:
 - Increase size of hero gallery as POC to be reviewed
 - Reduce hero gallery size and move back to right side of header text
 - Increase header text size and typewriter font size
+- Swap out galley images for videos
