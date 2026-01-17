@@ -39,74 +39,74 @@ export default function KioskSection() {
         <Animate type="fadeIn">
           <KioskButton
             title="Gamified Rewards & Prizes"
-            className="animate-float absolute bottom-[340px] left-[20px] z-10 rotate-[-5deg] md:hidden"
+            className="animate-float absolute bottom-[240px] left-[5px] z-10 rotate-[-5deg] sm:bottom-[260px] sm:left-[10px] md:bottom-[280px] md:left-[20px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="Gamified Rewards & Prizes"
             description='Move from static points to interactive "Win" states.'
             className="animate-float absolute bottom-[340px] left-[20px] z-10 hidden rotate-[-5deg] md:bottom-[380px] md:left-[80px] md:block md:rotate-[-8deg]"
-          />
+          /> */}
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
             title="Exclusive Access to Activations"
-            className="animate-float-delay-2 absolute bottom-[250px] left-[15px] z-10 rotate-[3deg] md:hidden"
+            className="animate-float-delay-2 absolute bottom-[180px] left-[8px] z-10 rotate-[3deg] sm:bottom-[175px] sm:left-[45px] md:bottom-[170px] md:left-[75px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="Exclusive Access to Activations"
             description="Gated digital and physical events unlocked via the token."
             className="animate-float-delay-2 absolute bottom-[200px] left-[20px] z-10 hidden rotate-[3deg] md:bottom-[180px] md:left-[100px] md:block md:rotate-[5deg]"
-          />
+          /> */}
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
             title="Instant Product Authentication"
-            className="animate-float-delay-4 absolute bottom-[130px] left-[70px] z-10 rotate-[4deg] md:hidden"
+            className="animate-float-delay-4 absolute bottom-[100px] left-[12px] z-10 rotate-[-6deg] sm:bottom-[90px] sm:left-[70px] md:bottom-[50px] md:left-[220px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="Instant Product Authentication"
             description="Instant proof of ownership and digital twin verification."
             className="animate-float-delay-4 absolute bottom-[60px] left-[20px] z-10 hidden rotate-[-4deg] md:bottom-[10px] md:left-[250px] md:block md:rotate-[-6deg]"
-          />
+          /> */}
         </Animate>
 
         {/* Right side buttons */}
         <Animate type="fadeIn">
           <KioskButton
             title="Close Connection to Brands"
-            className="animate-float absolute right-[20px] bottom-[300px] z-10 rotate-[5deg] md:hidden"
+            className="animate-float absolute right-[5px] bottom-[215px] z-10 rotate-[5deg] sm:right-[10px] sm:bottom-[255px] md:right-[20px] md:bottom-[280px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="Close Connection to Brands"
             description='Replacing distant email marketing with a direct, "Programmable" relationship.'
             className="animate-float absolute right-[20px] bottom-[340px] z-10 hidden rotate-[5deg] md:right-[80px] md:bottom-[380px] md:block md:rotate-[8deg]"
-          />
+          /> */}
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
             title="Huge Staking Cashback"
-            className="animate-float-delay-2 absolute right-[60px] bottom-[200px] z-10 rotate-[-3deg] md:hidden"
+            className="animate-float-delay-2 absolute right-[8px] bottom-[155px] z-10 rotate-[-3deg] sm:right-[60px] sm:bottom-[170px] md:right-[100px] md:bottom-[170px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="Huge Staking Cashback"
             description="High-yield rewards for holding and engaging with brand assets."
             className="animate-float-delay-2 absolute right-[20px] bottom-[200px] z-10 hidden rotate-[-3deg] md:right-[100px] md:bottom-[190px] md:block md:rotate-[-5deg]"
-          />
+          /> */}
         </Animate>
 
         <Animate type="fadeIn">
           <KioskButton
             title="AI Autonomous Fulfillment"
-            className="animate-float-delay-4 absolute right-[20px] bottom-[60px] z-10 rotate-[-3deg] md:hidden"
+            className="animate-float-delay-4 absolute right-[12px] bottom-[75px] z-10 rotate-[3deg] sm:right-[85px] sm:bottom-[85px] md:right-[240px] md:bottom-[50px]"
           />
-          <KioskBubble
+          {/* <KioskBubble
             title="AI Autonomous Fulfillment"
             description='Keep the logic of seamless delivery, but frame it as a "Value Benefit."'
             className="animate-float-delay-4 absolute right-[20px] bottom-[60px] z-10 hidden rotate-[4deg] md:right-[250px] md:bottom-[15px] md:block md:rotate-[6deg]"
-          />
+          /> */}
         </Animate>
 
         {/* Desktop Kiosk */}
