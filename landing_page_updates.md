@@ -37,3 +37,4 @@ For carousel in hero section:
 - Increase header text size and typewriter font size
 - Swap out galley images for videos
 - Adjust hero text size and spacing
+- Re-center floating toolbar
