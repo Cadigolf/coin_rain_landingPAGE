@@ -38,3 +38,5 @@ For carousel in hero section:
 - Swap out galley images for videos
 - Adjust hero text size and spacing
 - Re-center floating toolbar
+- Updated kiosk bubble text and alignment
+- Mobile alignment for kiosk bubble text
