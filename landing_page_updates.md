@@ -40,3 +40,4 @@ For carousel in hero section:
 - Re-center floating toolbar
 - Updated kiosk bubble text and alignment
 - Mobile alignment for kiosk bubble text
+- Rename "See it in Action" section to "Replace Static CRM with Programmable Loyalty"

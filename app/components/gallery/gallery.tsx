@@ -18,7 +18,7 @@ export default function Gallery() {
           <div className="relative flex flex-col items-center">
             <div className="bg-cyan pointer-events-none absolute top-1/2 left-1/2 hidden h-[100px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-[400px] opacity-30 blur-[125px] lg:flex" />
             <p className="text-gradient flex shrink-0 px-12 text-xl leading-[1.6] font-semibold">
-              See it in action:
+              Replace Static CRM with Programmable Loyalty:
             </p>
 
             {/* Underline glow for smaller screens */}
