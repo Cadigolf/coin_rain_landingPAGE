@@ -41,3 +41,6 @@ For carousel in hero section:
 - Updated kiosk bubble text and alignment
 - Mobile alignment for kiosk bubble text
 - Rename "See it in Action" section to "Replace Static CRM with Programmable Loyalty"
+- Update spline in the kiosk section
+- Remove CSS that was preventing the proper pointer interaction on the spline
+- Add temp mp3/4 images in gallery section. Final gifs to come.

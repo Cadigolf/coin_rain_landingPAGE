@@ -43,77 +43,62 @@ export default function Gallery() {
 
       {/* Gallery grid */}
       <div className="relative my-20 md:my-[132px]">
-        <div className="flex w-full flex-col space-y-6 md:grid md:grid-cols-3 md:space-y-0">
-          {/* First position */}
-          <div className="relative z-30 mx-6 rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:bottom-0 md:left-8 md:z-10 md:mx-0 md:w-full md:rotate-[5deg]">
-            {/* Mobile - slide from left */}
-            <Animate type="slideLeft" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-1.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-1"
-              />
-            </Animate>
-            {/* Desktop - slide from left */}
-            <Animate type="slideLeft" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-3.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-3"
-              />
-            </Animate>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
+          {/* First video */}
+          <div className="flex flex-col">
+            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
+              Gamified Rewards Unlocked
+            </h3>
+            <p className="text-paragraph mb-4 text-center text-sm">
+              Instant prizes at checkout.
+            </p>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/images/gallery/1_Activate_GIF_Wheel_Spins.mp4" type="video/mp4" />
+            </video>
           </div>
 
-          {/* Second position */}
-          <div className="relative z-20 mx-6 -mt-4 h-fit w-auto rotate-[5deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:z-30 md:mx-0 md:mt-0 md:w-full md:rotate-0">
-            {/* Mobile - slide from right */}
-            <Animate type="slideRight" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-2.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
-              />
-            </Animate>
-            {/* Desktop - fade up (middle) */}
-            <Animate type="fadeUp" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-1.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-1"
-              />
-            </Animate>
+          {/* Second video */}
+          <div className="flex flex-col">
+            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
+              Direct Access Brand Communities
+            </h3>
+            <p className="text-paragraph mb-4 text-center text-sm">
+              Token-gated community chat ecosystems.
+            </p>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/images/gallery/2_Video_Generation_Request.mp4" type="video/mp4" />
+            </video>
           </div>
 
-          {/* Third position */}
-          <div className="relative z-10 mx-6 -mt-4 h-fit w-auto rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:right-8 md:bottom-0 md:z-10 md:mx-0 md:mt-0 md:w-full md:rotate-[-5deg]">
-            {/* Mobile - slide from left again */}
-            <Animate type="slideLeft" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-3.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
-              />
-            </Animate>
-            {/* Desktop - slide from right */}
-            <Animate type="slideRight" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-2.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
-              />
-            </Animate>
+          {/* Third video */}
+          <div className="flex flex-col">
+            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
+              Physical-to-Digital Utility:
+            </h3>
+            <p className="text-paragraph mb-4 text-center text-sm">
+              Seamless VIP event entry.
+            </p>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/images/gallery/3_GIF_Exclusive_Event_Entry.mp4" type="video/mp4" />
+            </video>
           </div>
         </div>
 
