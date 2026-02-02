@@ -43,15 +43,19 @@ export default function Gallery() {
 
       {/* Gallery grid */}
       <div className="relative my-20 md:my-[132px]">
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-3 md:gap-6">
-          {/* First video */}
-          <div className="flex flex-col">
-            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
-              Gamified Rewards Unlocked
-            </h3>
-            <p className="text-paragraph mb-4 text-center text-sm">
-              Instant prizes at checkout.
-            </p>
+        <div className="flex w-full flex-col space-y-16 md:grid md:grid-cols-3 md:space-y-0">
+          {/* First position - Left */}
+          <div className="relative z-30 mx-6 rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:bottom-0 md:left-8 md:z-10 md:mx-0 md:w-full md:rotate-[5deg]">
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Gamified Rewards
+                <br />
+                Unlocked
+              </h3>
+              <p className="text-paragraph text-sm">
+                Instant prizes at checkout.
+              </p>
+            </div>
             <video
               className="w-full rounded-lg shadow-lg"
               autoPlay
@@ -59,18 +63,25 @@ export default function Gallery() {
               muted
               playsInline
             >
-              <source src="/images/gallery/1_Activate_GIF_Wheel_Spins.mp4" type="video/mp4" />
+              <source
+                src="/images/gallery/gamified_rewards_compressed.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
 
-          {/* Second video */}
-          <div className="flex flex-col">
-            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
-              Direct Access Brand Communities
-            </h3>
-            <p className="text-paragraph mb-4 text-center text-sm">
-              Token-gated community chat ecosystems.
-            </p>
+          {/* Second position - Middle */}
+          <div className="relative z-20 mx-6 h-fit w-auto rotate-[5deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:z-30 md:mx-0 md:w-full md:rotate-0">
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Direct Access Brand
+                <br />
+                Communities
+              </h3>
+              <p className="text-paragraph text-sm">
+                Token-gated community chat ecosystems.
+              </p>
+            </div>
             <video
               className="w-full rounded-lg shadow-lg"
               autoPlay
@@ -78,18 +89,25 @@ export default function Gallery() {
               muted
               playsInline
             >
-              <source src="/images/gallery/2_Video_Generation_Request.mp4" type="video/mp4" />
+              <source
+                src="/images/gallery/communities_compressed.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
 
-          {/* Third video */}
-          <div className="flex flex-col">
-            <h3 className="text-gradient mb-2 text-center text-xl font-semibold">
-              Physical-to-Digital Utility:
-            </h3>
-            <p className="text-paragraph mb-4 text-center text-sm">
-              Seamless VIP event entry.
-            </p>
+          {/* Third position - Right */}
+          <div className="relative z-10 mx-6 h-fit w-auto rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:right-8 md:bottom-0 md:z-10 md:mx-0 md:w-full md:rotate-[-5deg]">
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Physical-to-Digital
+                <br />
+                Utility
+              </h3>
+              <p className="text-paragraph text-sm">
+                Seamless VIP event entry.
+              </p>
+            </div>
             <video
               className="w-full rounded-lg shadow-lg"
               autoPlay
@@ -97,7 +115,10 @@ export default function Gallery() {
               muted
               playsInline
             >
-              <source src="/images/gallery/3_GIF_Exclusive_Event_Entry.mp4" type="video/mp4" />
+              <source
+                src="/images/gallery/physical_to_digital_compressed.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
