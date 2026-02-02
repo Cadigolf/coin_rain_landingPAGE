@@ -2,7 +2,6 @@ import Image from "next/image";
 import KioskButton from "./kiosk-button";
 import Animate from "../shared/animate";
 import SplineIframe from "../shared/spline-iframe";
-import KioskBubble from "./kiosk-bubble";
 
 export default function KioskSection() {
   return (
@@ -24,16 +23,16 @@ export default function KioskSection() {
       </div>
 
       {/* Mobile Kiosk */}
-      <div className="relative mt-12 w-full lg:hidden">
+      <div className="relative top-10 mt-12 w-full lg:hidden">
         <div className="bg-cyan absolute top-0 left-0 h-[200px] w-5 rotate-[-45deg] blur-[50px] sm:hidden" />
         <div className="bg-cyan absolute top-0 right-0 h-[200px] w-5 rotate-[45deg] blur-[50px] sm:hidden" />
-        <div className="pointer-events-none h-full w-full scale-150">
-          <SplineIframe src="https://my.spline.design/hubsherokioskcopy-9mqZF5tZwApyO5TuDJhZ0hbe/" />
+        <div className="h-full w-full scale-150">
+          <SplineIframe src="https://my.spline.design/hubsaifinal-qIPjbxgSmfew3wpovcY5wunq/" />
         </div>
       </div>
 
       {/* Kiosk with floating buttons */}
-      <div className="relative">
+      <div className="relative mt-16">
         {/* Left side buttons */}
         <Animate type="fadeIn">
           <KioskButton
@@ -102,10 +101,12 @@ export default function KioskSection() {
             className="animate-float-delay-4 absolute right-[20px] bottom-[60px] z-10 hidden rotate-[4deg] md:right-[250px] md:bottom-[15px] md:block md:rotate-[6deg]"
           /> */}
         </Animate>
-        {/* Desktop Kiosk */}
-        <div className="pointer-events-none absolute -top-20 left-0 hidden h-full w-full lg:flex">
-          <SplineIframe src="https://my.spline.design/hubsherokioskcopy-9mqZF5tZwApyO5TuDJhZ0hbe/" />
+
+        {/* Desktop Kiosk - Static background */}
+        <div className="absolute right-10 bottom-20 hidden h-full w-full lg:block">
+          <SplineIframe src="https://my.spline.design/hubsaifinal-qIPjbxgSmfew3wpovcY5wunq/" />
         </div>
+
         {/* Main kiosk image */}
         <Image
           src="/images/kiosk/kiosk-bg.png"
