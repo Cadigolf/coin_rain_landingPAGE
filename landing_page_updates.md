@@ -44,3 +44,4 @@ For carousel in hero section:
 - Update spline in the kiosk section
 - Remove CSS that was preventing the proper pointer interaction on the spline
 - Add temp mp3/4 images in gallery section. Final gifs to come.
+- Add "H" logo to planet section (contact us)
