@@ -45,3 +45,4 @@ For carousel in hero section:
 - Remove CSS that was preventing the proper pointer interaction on the spline
 - Add temp mp3/4 images in gallery section. Final gifs to come.
 - Add "H" logo to planet section (contact us)
+- Update text in "How it Works" section with new copy from Tyler
