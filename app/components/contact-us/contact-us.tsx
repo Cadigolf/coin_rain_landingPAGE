@@ -23,6 +23,13 @@ export default function ContactUs() {
 
       <Animate type="fadeIn">
         <div className="relative overflow-x-clip">
+          <Image
+            src="/images/contact-us/hubs-ai-logo-small.png"
+            width={120}
+            height={120}
+            alt="HubsAI"
+            className="animate-coin-spin pointer-events-none absolute top-45 left-1/2 h-15 w-15 -translate-x-1/2 opacity-90 md:top-90 md:h-25 md:w-25"
+          />
           {/* Overlay */}
           <Image
             src="/images/contact-us/contact-us-bg.png"
@@ -47,13 +54,13 @@ export default function ContactUs() {
 
       {/* Contact Button */}
       <Animate type="fadeUp">
-          <div className="relative flex w-full justify-center sm:absolute sm:bottom-5 sm:left-1/2 sm:-translate-x-1/2">
-            <Tooltip>
-              <Button>
-                <p className="text-gradient">Partner With Us</p>
-              </Button>
-            </Tooltip>
-          </div>
+        <div className="relative flex w-full justify-center sm:absolute sm:bottom-5 sm:left-1/2 sm:-translate-x-1/2">
+          <Tooltip>
+            <Button>
+              <p className="text-gradient">Partner With Us</p>
+            </Button>
+          </Tooltip>
+        </div>
       </Animate>
     </div>
   );

@@ -18,7 +18,7 @@ export default function Gallery() {
           <div className="relative flex flex-col items-center">
             <div className="bg-cyan pointer-events-none absolute top-1/2 left-1/2 hidden h-[100px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-[400px] opacity-30 blur-[125px] lg:flex" />
             <p className="text-gradient flex shrink-0 px-12 text-xl leading-[1.6] font-semibold">
-              See it in action:
+              Replace Static CRM with Programmable Loyalty:
             </p>
 
             {/* Underline glow for smaller screens */}
@@ -43,77 +43,83 @@ export default function Gallery() {
 
       {/* Gallery grid */}
       <div className="relative my-20 md:my-[132px]">
-        <div className="flex w-full flex-col space-y-6 md:grid md:grid-cols-3 md:space-y-0">
-          {/* First position */}
+        <div className="flex w-full flex-col space-y-16 md:grid md:grid-cols-3 md:space-y-0">
+          {/* First position - Left */}
           <div className="relative z-30 mx-6 rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:bottom-0 md:left-8 md:z-10 md:mx-0 md:w-full md:rotate-[5deg]">
-            {/* Mobile - slide from left */}
-            <Animate type="slideLeft" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-1.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-1"
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Gamified Rewards
+                <br />
+                Unlocked
+              </h3>
+              <p className="text-paragraph text-sm">
+                Instant prizes at checkout.
+              </p>
+            </div>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="/images/gallery/gamified_rewards_compressed.mp4"
+                type="video/mp4"
               />
-            </Animate>
-            {/* Desktop - slide from left */}
-            <Animate type="slideLeft" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-3.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-3"
-              />
-            </Animate>
+            </video>
           </div>
 
-          {/* Second position */}
-          <div className="relative z-20 mx-6 -mt-4 h-fit w-auto rotate-[5deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:z-30 md:mx-0 md:mt-0 md:w-full md:rotate-0">
-            {/* Mobile - slide from right */}
-            <Animate type="slideRight" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-2.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
+          {/* Second position - Middle */}
+          <div className="relative z-20 mx-6 h-fit w-auto rotate-[5deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:z-30 md:mx-0 md:w-full md:rotate-0">
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Direct Access Brand
+                <br />
+                Communities
+              </h3>
+              <p className="text-paragraph text-sm">
+                Token-gated community chat ecosystems.
+              </p>
+            </div>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="/images/gallery/communities_compressed.mp4"
+                type="video/mp4"
               />
-            </Animate>
-            {/* Desktop - fade up (middle) */}
-            <Animate type="fadeUp" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-1.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-1"
-              />
-            </Animate>
+            </video>
           </div>
 
-          {/* Third position */}
-          <div className="relative z-10 mx-6 -mt-4 h-fit w-auto rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:right-8 md:bottom-0 md:z-10 md:mx-0 md:mt-0 md:w-full md:rotate-[-5deg]">
-            {/* Mobile - slide from left again */}
-            <Animate type="slideLeft" className="md:hidden">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-3.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
+          {/* Third position - Right */}
+          <div className="relative z-10 mx-6 h-fit w-auto rotate-[-8deg] shadow-black drop-shadow-xl transition-all duration-500 hover:scale-105 md:right-8 md:bottom-0 md:z-10 md:mx-0 md:w-full md:rotate-[-5deg]">
+            <div className="mb-4 text-center">
+              <h3 className="text-gradient mb-2 text-xl leading-tight font-semibold">
+                Physical-to-Digital
+                <br />
+                Utility
+              </h3>
+              <p className="text-paragraph text-sm">
+                Seamless VIP event entry.
+              </p>
+            </div>
+            <video
+              className="w-full rounded-lg shadow-lg"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source
+                src="/images/gallery/physical_to_digital_compressed.mp4"
+                type="video/mp4"
               />
-            </Animate>
-            {/* Desktop - slide from right */}
-            <Animate type="slideRight" className="hidden md:block">
-              <Image
-                src="/images/gallery/gallery-placeholder-with-frame-2.png"
-                className="aspect-auto w-full"
-                width={500}
-                height={500}
-                alt="gallery-placeholder-2"
-              />
-            </Animate>
+            </video>
           </div>
         </div>
 

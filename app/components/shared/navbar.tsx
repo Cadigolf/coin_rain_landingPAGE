@@ -19,7 +19,7 @@ export default function Navbar() {
   const activeSection = useActiveSection(sections);
 
   return (
-    <div className="fixed bottom-5 z-50 flex gap-x-2 overflow-visible rounded-full bg-gradient-to-b from-white/[3%] to-white/[5%] px-1 py-1 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_1px_0_0_rgba(255,255,255,0.02)] backdrop-blur-[4px] sm:py-1.5">
+    <div className="fixed bottom-5 left-1/2 z-50 flex -translate-x-1/2 gap-x-2 overflow-visible rounded-full bg-gradient-to-b from-white/[3%] to-white/[5%] px-1 py-1 shadow-[inset_0_1px_0_0_rgba(255,255,255,0.15),inset_0_1px_0_0_rgba(255,255,255,0.02)] backdrop-blur-[4px] sm:py-1.5">
       <div className="border-stroke bg-radial-linear-top-large flex h-full items-center gap-x-3 overflow-visible rounded-full border px-6 py-3 text-xs font-medium hover:text-white sm:gap-x-6 sm:py-4">
         {navigationLinks.map((link) => {
           const isActive = activeSection === link.href;

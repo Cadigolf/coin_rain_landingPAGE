@@ -15,7 +15,7 @@ const steps = [
       "https://my.spline.design/hubsherokioskcopy-188R0TEcGmmce28eyPj3x9cW/",
     title: "Mint Your NFT",
     description:
-      "Each purchase generates a digital twin, instantly minted at checkout.",
+      "Each purchase creates a digital twin, minted instantly at checkout.",
   },
   {
     id: "stake",
@@ -23,15 +23,15 @@ const steps = [
       "https://my.spline.design/hubsherokioskcopy-7lSqJzZx9AyiyU4TAc0W93EE/",
     title: "Stake or Play",
     description:
-      "Put your NFT to work by staking or joining gamified experiences.",
+      "Put your NFT to work through staking, access, or gamified experiences.",
   },
   {
     id: "rewards",
     spline:
       "https://my.spline.design/hubsherokioskcopy-9mqZF5tZwApyO5TuDJhZ0hbe/",
-    title: "Earn $HUBS Rewards",
+    title: "Unlock Innovation",
     description:
-      "Receive $HUBS with every interaction, adding real value to your products.",
+      "NFTs activate in the real world—through kiosks, rewards, and autonomous experiences.",
   },
 ];
 

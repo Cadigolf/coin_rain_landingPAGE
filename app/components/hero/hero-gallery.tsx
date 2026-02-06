@@ -9,18 +9,18 @@ type HeroGalleryProps = {
   interval?: number;
 };
 
-const galleryImages = [
+const galleryVideos = [
   {
-    src: "/images/gallery/gallery-placeholder-1.png",
-    alt: "gallery-placeholder-1",
+    src: "/images/gallery/Animated_Coin_GIF_Creation.mp4",
+    alt: "Animated Coin GIF Creation",
   },
   {
-    src: "/images/gallery/gallery-placeholder-2.png",
-    alt: "gallery-placeholder-2",
+    src: "/images/gallery/Animation-3.mp4",
+    alt: "Animated Tokens",
   },
   {
-    src: "/images/gallery/gallery-placeholder-3.png",
-    alt: "gallery-placeholder-3",
+    src: "/images/gallery/Logo_and_Rolex_NFT_Inquiry.mp4",
+    alt: "Logo and Rolex NFT Inquiry",
   },
 ];
 
@@ -37,7 +37,7 @@ function getSlideStyle(index: number, activeIndex: number, prevIndex: number) {
 
 export default function HeroGallery({
   className,
-  interval = 3000,
+  interval = 8000,
 }: HeroGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [prevIndex, setPrevIndex] = useState(-1);
@@ -45,7 +45,7 @@ export default function HeroGallery({
   useEffect(() => {
     const timer = setInterval(() => {
       setPrevIndex(activeIndex);
-      setActiveIndex((current) => (current + 1) % galleryImages.length);
+      setActiveIndex((current) => (current + 1) % galleryVideos.length);
     }, interval);
     return () => clearInterval(timer);
   }, [interval, activeIndex]);
@@ -61,7 +61,7 @@ export default function HeroGallery({
       />
 
       <div className="xs:rounded-xl xs:inset-1.5 absolute inset-[6px] overflow-hidden rounded-lg bg-black sm:rounded-lg lg:rounded-xl xl:inset-x-2 xl:inset-y-[9px] xl:rounded-2xl">
-        {galleryImages.map((image, index) => {
+        {galleryVideos.map((video, index) => {
           const style = getSlideStyle(index, activeIndex, prevIndex);
           return (
             <div
@@ -69,18 +69,22 @@ export default function HeroGallery({
               className="absolute inset-0 transition-transform duration-1000 ease-in-out"
               style={style}
             >
-              <Image
-                src={image.src}
-                fill
-                className="object-cover"
-                alt={image.alt}
+              <video
+                src={video.src}
+                className="h-full w-full object-cover"
+                autoPlay
+                muted
+                loop
+                playsInline
+                aria-label={video.alt}
               />
             </div>
           );
         })}
       </div>
 
-      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[30px] w-[80px] -translate-x-1/2 rounded-full bg-cyan-500/50 blur-[50px]" />
+      <div className="pointer-events-none absolute bottom-0 left-1/2 h-[60px] w-[140px] -translate-x-1/2 rounded-full bg-cyan-500/60 blur-[80px]" />
+      <div className="pointer-events-none absolute inset-0 rounded-full bg-gradient-to-tr from-cyan-500/20 via-transparent to-purple-500/20 blur-xl" />
     </div>
   );
 }

@@ -26,11 +26,11 @@ export default function Hero() {
         alt="hero-overlay-bg-mobile"
       />
 
-      <div className="relative flex flex-col items-center justify-center px-4 lg:px-0">
+      <div className="relative w-full max-w-7xl px-4 lg:px-8">
         {/* Mobile-only decorative elements */}
         <Image
           src="/icons/particle.svg"
-          className="absolute -top-16 mx-auto w-16 -rotate-90 lg:hidden"
+          className="absolute -top-16 left-1/2 w-16 -translate-x-1/2 -rotate-90 lg:hidden"
           width={60}
           height={60}
           alt="particle"
@@ -43,75 +43,83 @@ export default function Hero() {
           alt="grid-overlay"
         />
 
-        <div className="font-geist text-center">
-          <div className="space-y-1 leading-[1.2] lg:space-y-2">
-            {/* First line: "Tokenizing" + conditional "The World" for desktop and mobile */}
-            <Animate type="fadeUp" delay={0}>
-              <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:flex-row lg:gap-x-6 lg:text-[65px] xl:text-[92px]">
-                <div className="flex items-center gap-x-3 xl:gap-x-6">
-                  <span className="font-bold">Tokenizing</span>
-                  <span className="font-light lg:hidden">The</span>
+        <div className="flex flex-col items-center justify-center">
+          <div className="font-geist text-center">
+            <div className="space-y-1 leading-[1.2] lg:space-y-2">
+              {/* Main heading: "Transform Retail with Tokenization" */}
+              <Animate type="fadeUp" delay={0}>
+                {/* Desktop: text and gallery side by side */}
+                <div className="hidden lg:flex lg:items-center lg:justify-center lg:gap-x-6 xl:gap-x-8">
+                  <div className="text-gradient text-6xl whitespace-nowrap lg:text-6xl xl:text-[84px]">
+                    <span className="font-light">
+                      Transform Retail with{" "}
+                      <span className="font-bold">Tokenization</span>
+                    </span>
+                  </div>
+                  <HeroGallery className="w-[200px] xl:w-[240px]" />
                 </div>
 
-                {/* Desktop: "The World" + gallery inline */}
-                <div className="hidden items-center justify-center gap-x-4 text-[65px] lg:flex xl:gap-x-8 xl:text-[92px]">
-                  <span className="font-light">The World</span>
-                  <HeroGallery className="aspect-auto w-[120px] object-cover xl:w-[180px]" />
+                {/* Mobile: text only */}
+                <div className="text-gradient flex flex-col items-center justify-center text-[40px] lg:hidden">
+                  <span className="font-light">
+                    Transform Retail with{" "}
+                    <span className="font-bold">Tokenization</span>
+                  </span>
                 </div>
-              </div>
-            </Animate>
+              </Animate>
 
-            {/* Mobile: "World" + gallery on separate line */}
-            <Animate type="fadeUp" delay={0.15}>
-              <div className="text-gradient flex items-center justify-center gap-x-2 text-[40px] lg:hidden">
-                <span className="font-light">World</span>
-                <HeroGallery className="aspect-auto w-[110px] object-cover" />
-              </div>
-            </Animate>
+              {/* Mobile: gallery on separate line */}
+              <Animate type="fadeUp" delay={0.15}>
+                <div className="text-gradient flex items-center justify-center gap-x-2 text-[40px] lg:hidden">
+                  <HeroGallery className="w-[260px]" />
+                </div>
+              </Animate>
 
-            {/* Powring for both desktop and mobile */}
-            <Animate type="fadeUp" delay={0.3}>
-              <div className="text-gradient text-[40px] font-light lg:text-[65px] xl:text-[95px]">
-                Powering
-              </div>
-            </Animate>
+              {/* "Unlocking" for both desktop and mobile */}
+              <Animate type="fadeUp" delay={0.3}>
+                <div className="text-gradient mt-4 mb-8 text-6xl font-light lg:text-6xl xl:text-8xl">
+                  Unlocking
+                </div>
+              </Animate>
 
-            {/* Desktop: Animated text */}
-            <Animate type="fadeUp" delay={0.45}>
-              <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-[65px] xl:text-[95px]">
-                <HeroAnimatedHeading isMobile={false} />
-              </div>
-            </Animate>
+              {/* Desktop: Animated text */}
+              <Animate type="fadeUp" delay={0.45}>
+                <div className="text-gradient hidden w-full items-center justify-center font-bold lg:flex lg:text-7xl xl:text-8xl">
+                  <HeroAnimatedHeading isMobile={false} />
+                </div>
+              </Animate>
 
-            {/* Mobile: Animated text */}
-            <Animate type="fadeUp" delay={0.45}>
-              <div className="bg-gradient h-24 text-[40px] font-bold lg:hidden">
-                <HeroAnimatedHeading isMobile={true} />
-              </div>
-            </Animate>
-          </div>
-        </div>
-
-        <Animate type="fadeUp" delay={0.6}>
-          <p className="text-paragraph mt-6 text-center text-[18px] leading-[1.6] sm:mt-12 lg:text-xl">
-            HubsAI turns products into tokenized assets with real-world value.
-          </p>
-        </Animate>
-
-        <Animate type="fadeUp" delay={0.75}>
-          <Button className="mt-8 sm:mt-12" variant="bright">
-            <div className="flex items-center gap-x-3 lg:gap-x-4">
-              <Image
-                src="/icons/solana.svg"
-                className="h-6 w-6 lg:h-8 lg:w-8"
-                width={32}
-                height={32}
-                alt="solana-logo"
-              />
-              <p className="text-stroke">$Hubs Coming Soon</p>
+              {/* Mobile: Animated text */}
+              <Animate type="fadeUp" delay={0.45}>
+                <div className="bg-gradient h-24 text-4xl font-bold lg:hidden">
+                  <HeroAnimatedHeading isMobile={true} />
+                </div>
+              </Animate>
             </div>
-          </Button>
-        </Animate>
+          </div>
+
+          {/* Description and CTA */}
+          <Animate type="fadeUp" delay={0.6}>
+            <p className="text-paragraph mt-6 text-center text-[18px] leading-[1.6] sm:mt-12 lg:text-xl">
+              HubsAI turns products into tokenized assets with real-world value.
+            </p>
+          </Animate>
+
+          <Animate type="fadeUp" delay={0.75}>
+            <Button className="mt-8 sm:mt-12" variant="bright">
+              <div className="flex items-center gap-x-3 lg:gap-x-4">
+                <Image
+                  src="/icons/solana.svg"
+                  className="h-6 w-6 lg:h-8 lg:w-8"
+                  width={32}
+                  height={32}
+                  alt="solana-logo"
+                />
+                <p className="text-stroke">$Hubs Coming Soon</p>
+              </div>
+            </Button>
+          </Animate>
+        </div>
 
         <Navbar />
       </div>
