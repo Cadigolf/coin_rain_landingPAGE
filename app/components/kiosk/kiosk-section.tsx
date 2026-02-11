@@ -27,7 +27,7 @@ export default function KioskSection() {
         <div className="bg-cyan absolute top-0 left-0 h-[200px] w-5 rotate-[-45deg] blur-[50px] sm:hidden" />
         <div className="bg-cyan absolute top-0 right-0 h-[200px] w-5 rotate-[45deg] blur-[50px] sm:hidden" />
         <div className="h-full w-full scale-150">
-          <SplineIframe src="https://my.spline.design/hubsaifinal-qIPjbxgSmfew3wpovcY5wunq/" />
+          <SplineIframe src="/spline-scene.html" />
         </div>
       </div>
 
@@ -104,7 +104,7 @@ export default function KioskSection() {
 
         {/* Desktop Kiosk - Static background */}
         <div className="absolute right-10 bottom-20 hidden h-full w-full lg:block">
-          <SplineIframe src="https://my.spline.design/hubsaifinal-qIPjbxgSmfew3wpovcY5wunq/" />
+          <SplineIframe src="/spline-scene.html" />
         </div>
 
         {/* Main kiosk image */}

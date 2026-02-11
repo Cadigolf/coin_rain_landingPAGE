@@ -64,6 +64,10 @@ export default function SplineIframe({
       height="100%"
       className={className}
       loading="lazy"
+      style={{
+        transform: 'translateZ(0)',
+        WebkitTransform: 'translateZ(0)',
+      }}
     />
   );
 }
